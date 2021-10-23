@@ -1,0 +1,14 @@
+/* Esta es mi hoja de estilos*/
+body{
+    background-color:rgb(200, 221, 228);
+}
+footer{
+    background-color: white;
+}
+header{
+    background-color: white;
+}
+
+.botones{
+    color: blue;
+}
