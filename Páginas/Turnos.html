@@ -13,8 +13,26 @@
 <p>TURNOS</p>
 
 <P>Recuerde que para solicitar un turno primero tiene que estar registrado.</P>
+
+<p>Bienvenido <br><br>
+    Complete sus datos para ingresar
+<form action="" method="post" target="_blank">
+    <fieldset>
+        <label for="DNI">Documento:</label>
+        <select name="DNI" id="DNI">
+            <option value="DNI">DNI</option>
+            <option value="Pasaporte">Pasaporte</option>
+        </select>
+        <label for="NRO">Numero:</label> <input type="number" id="NRO" name="NRO" required>
+        <br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="Contraseña" name="Contraseña" required><br><br>
+        <input type="submit" value="Buscar turnos disponibles">
+    </fieldset>
+</form>
+<p>
 <p> <a href="Nuevousuario.html">Nuevo usuario</a></p>
-<p> <a href="Yasoyusuario.html">Ya soy usuario</a></p>
+
 </body>
 
 </html>

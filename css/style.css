@@ -12,3 +12,5 @@ header{
 .botones{
     color: blue;
 }
+*{font-size: large;
+font-family: 'Open Sans', sans-serif;}
