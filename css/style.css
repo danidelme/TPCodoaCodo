@@ -10,7 +10,7 @@ header{
 }
 
 .botones{
-    color: blue;
+    color:white; background-color:rgb(227, 140, 245);
 }
 *{font-size: large;
 font-family: 'Open Sans', sans-serif;}
@@ -18,6 +18,6 @@ font-family: 'Open Sans', sans-serif;}
 
 .fa-facebook{ color:rgb(43, 43, 134)}
 
-.fa-instagram-square{ color:rgb(151, 14, 140)}
+.fa-instagram-square{ color:rgb(163, 4, 83)}
 
 .fa-whatsapp{color:rgb(58, 211, 58)}
