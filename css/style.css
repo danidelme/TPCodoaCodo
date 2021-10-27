@@ -183,7 +183,7 @@
     color:rgb(124, 112, 112);}
 
 
-    .footer {grid-area: footer;
+ .footer {grid-area: footer;
       background-color:rgb(240, 221, 221);
      }
 
@@ -198,3 +198,27 @@
    font-size: 30px;padding:10px;}
 
 .fa-at{color:rgb(78, 70, 70)  ;font-size: 30px;padding:10px;}
+
+/*formularios*/
+
+form{background-color:rgb(211, 214, 214) ;
+    color:rgb(104, 103, 103);
+    width: 450px; 
+    margin:0 auto; 
+    padding:10px; 
+    border-radius: 3px;
+    } 
+
+    input, textarea {outline:none;}
+
+    /*botones formularios*/
+    
+    .boton {color:rgb(68, 68, 68);
+    background-color: rgb(245, 178, 189);
+    padding: 8px 12px;
+    border-color:white;
+    border-style:outset;
+    border-width: 2px;
+  
+  
+  }
