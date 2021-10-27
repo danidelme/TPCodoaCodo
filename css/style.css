@@ -11,11 +11,11 @@
   
    h1 {color:grey;}
 
-   h2 {color:grey;}
+   h2 {color:grey; text-align: center;}
 
    h4 {color:grey;padding-bottom: 20px;
-       padding-right: 10px;padding-left: 10px;
-        font-size: 15px;}
+        padding-right: 10px;padding-left: 10px;
+        font-size: 15px;text-align: center;}
 
 
   h5 {color:grey;padding-bottom: 20px;
@@ -52,6 +52,22 @@
     border-style:inset
     }
 
+    .botones:hover {
+      background-color:rgb(241, 231, 172);
+      border-style:inset;}
+  
+  
+  
+  .botones{
+      color:white; 
+      background-color:rgb(245, 178, 189);
+      border-color:white;
+      border-style:outset;
+      border-width: 5px;
+      align-content:center;
+      text-decoration: none;
+      text-align:center ;
+    }
     
 
 /*significa que se aplica a todo dentro de gri-container*/
@@ -72,7 +88,7 @@
   /* le decimos que parte queremos que ocupe en nuestra plantilla*/
   .header{
       grid-area: header;
-      background-color:rgb(240, 221, 221);
+      background-color:rgb(240, 221, 221);text-align:center ;
   }
   
   .header1{
@@ -113,6 +129,8 @@
          background-color:rgb(240, 221, 221);
          padding-top:  10px;}
   
+  .footer3 {background-color:rgb(240, 221, 221);text-align: center;}
+
   /* se ponen las areas que queremos tenga nuestro grid*/
   .grid-container { display: grid;
       gap: 10px;
@@ -173,7 +191,8 @@
       text-align: center;
     color:rgb(124, 112, 112);}
 
-  .fa-facebook{ color:rgb(43, 43, 134);
+
+.fa-facebook{ color:rgb(43, 43, 134);
     font-size: 30px;}
 
 .fa-instagram-square{ color:rgb(206, 40, 123);
