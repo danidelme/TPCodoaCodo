@@ -6,31 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/62c8d4dfbf.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 
-<body> <a class="botones" href="../index.html">Ir a Inicio</a> <br><br>
+<body class="grid-container1">
+
+    <header class="header">
+
+        <strong>
+            <h1>Bienvenidos a Consultorios Avenida</h1>
+            <h2>20 años cuidando tu salud</h2>
+        </strong><br><br>
+
+    </header>
 
 
 
 
-    <form action="" method="post" target="_blank">
-        <label for="Nombre">Nombre y apellido:</label>
-        <input type="text" id="Nombre" name="Nombre" required size=30>
+    <Nav class="navbar">
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="Profesionales.html">Profesionales</a></li>
+            <li> <a href="Turnos.html">Turnos</a></li>
+            <li> <a href="Contacto.html">Contacto</a></li>
+
+        </ul>
+    </Nav>
+
+    <article class="main"><br><br>
+
+
+        <form action="" method="post" target="_blank">
+            <label for="Nombre">Nombre y apellido:</label>
+            <input type="text" id="Nombre" name="Nombre" required size=30>
+            <br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required size=30>
+            <br><br>
+            <label for="Telefono">Número telefónico:</label>
+            <input type="tel" id="Telefono" name="Telefono" size=30>
+            <br><br>
+            <legend>Ingrese su comentario:</legend>
+            <textarea rows=10 cols=45 name="Comentario"></textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </article>
+
+    <footer class="footer">
+
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="mailto:consultoriosavenida@contacto.com.ar" target="_blank"> <i class="fas fa-at"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <br><br>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required size=30>
-        <br><br>
-        <label for="Telefono">Número telefónico:</label>
-        <input type="tel" id="Telefono" name="Telefono" size=30>
-        <br><br>
-        <legend>Ingrese su comentario:</legend>
-        <textarea rows=10 cols=45 name="Comentario"></textarea>
-        <br><br>
+        <p>@danidelme
+        <p><br>
+        <p>Todos los derechos reservados
+        <p><br>
 
-        <input type="submit" value="Enviar">
-    </form>
 
+
+    </footer>
 </body>
 
 </html>

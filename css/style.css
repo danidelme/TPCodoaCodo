@@ -1,4 +1,5 @@
 /* Esta es mi hoja de estilos*/
+
 *{ box-sizing: border-box;
   margin:0; padding: 0;}
   
@@ -48,12 +49,12 @@
     
   }
   
-  li a:hover { background-color:rgb(241, 231, 172);
+  li a:hover { background-color:rgb(203, 209, 203);
     border-style:inset
     }
 
-    .botones:hover {
-      background-color:rgb(241, 231, 172);
+   .botones:hover {
+      background-color:rgb(203, 209, 203);
       border-style:inset;}
   
   
@@ -86,29 +87,26 @@
     }
 
   /* le decimos que parte queremos que ocupe en nuestra plantilla*/
-  .header{
+
+  .header{ 
       grid-area: header;
       background-color:rgb(240, 221, 221);text-align:center ;
   }
   
-  .header1{
-    grid-area: header1;
-    background-color:rgb(240, 221, 221)}
   
   .navbar{grid-area: navbar;
           background-color: rgb(245, 178, 189);}
 
-  .navbar1{grid-area: navbar1;
-           background-color: rgb(245, 178, 189);}
   
   
 
   .sidebar {grid-area: sidebar;
           background-color: rgb(203, 209, 203);}
+
   
   .main {grid-area: main;background-color:white;}
 
-  .main1 {grid-area: main1;background-color:white;}
+  
  
 
   img {padding-top: 5px;padding-left: 5px;padding-right: 5px;
@@ -121,17 +119,10 @@
    #mapa {width: 70%;
          margin:0 auto}
 
-  .footer {grid-area: footer;
-        background-color:rgb(240, 221, 221);
-        padding-top:  10px;}
 
-  .footer1 {grid-area: footer1;
-         background-color:rgb(240, 221, 221);
-         padding-top:  10px;}
   
-  .footer3 {background-color:rgb(240, 221, 221);text-align: center;}
+      /* se ponen las areas que queremos tenga nuestro grid*/
 
-  /* se ponen las areas que queremos tenga nuestro grid*/
   .grid-container { display: grid;
       gap: 10px;
       grid-template: 
@@ -142,17 +133,15 @@
       "footer" 50px;
   }
   
-  .grid-container1 {display:grid;
-    background-color:rgb(241, 231, 172);
-    grid-template-columns:  60% 40%;
-    grid-template-rows: 100px 50px auto 50px;
-    grid-template-areas: 
-    "header1 header1 header1"
-    "navbar1 navbar1 navbar1" 
-    "main1 main1 main1"
-    "footer1 footer1 footer1" ;}
+  .grid-container1 { display: grid;background-color:rgb(215, 245, 242);
+    gap: 10px;
+    grid-template: 
+    "header" 100px
+    "navbar"50px
+    "main" auto
+    "footer" 50px;}
 
-
+/*media queries*/
 
   @media(min-width:600px) {
   
@@ -168,7 +157,7 @@
   
   @media(min-width:900px) {
   
-      .grid-container {background-color:rgb(241, 231, 172);
+      .grid-container {background-color:rgb(215, 245, 242);
           grid-template-columns:  60% 40%;
           grid-template-rows: 100px 50px auto 50px;
           grid-template-areas: 
@@ -177,6 +166,8 @@
           "main main sidebar"
           "footer footer footer" ;}
   }
+
+  /*plantilla de medicos*/
 
   .grid {
     display: grid;
@@ -192,13 +183,18 @@
     color:rgb(124, 112, 112);}
 
 
+    .footer {grid-area: footer;
+      background-color:rgb(240, 221, 221);
+     }
+
+
 .fa-facebook{ color:rgb(43, 43, 134);
-    font-size: 30px;}
+    font-size: 30px;padding:10px;}
 
 .fa-instagram-square{ color:rgb(206, 40, 123);
-            font-size: 30px;}
+            font-size: 30px;padding:10px;}
 
 .fa-whatsapp{color:rgb(38, 196, 38);
-   font-size: 30px;}
+   font-size: 30px;padding:10px;}
 
-.fa-at{color:rgb(78, 70, 70)  ;font-size: 30px;}
+.fa-at{color:rgb(78, 70, 70)  ;font-size: 30px;padding:10px;}

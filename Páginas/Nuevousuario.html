@@ -6,43 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/62c8d4dfbf.js" crossorigin="anonymous"></script>
     <title>Nuevo usuario</title>
 </head>
 
-<body>
-    <a class="botones" href="Turnos.html">Ir a Turnos</a><br>
-    <br>
+<body class="grid-container1">
 
-    <form action="" method="post" target="_blank">
-        <fieldset>
-            <legend>Registro:</legend>
-            <label for="Nombre">Nombre:</label>
-            <input type="text" id="Nombre" name="Nombre" required><br><br>
 
-            <label for="Apellido">Apellido:</label>
-            <input type="text" id="Apellido" name="Apellido" required><br><br>
 
-            <label for="DNI">Documento:</label>
-            <select name="DNI" id="DNI">
-                <option value="DNI">DNI</option>
-                <option value="Pasaporte">Pasaporte</option>
-            </select>
-            <label for="NRO">Numero:</label> <input type="number" id="NRO" name="NRO" required>
-            <br><br>
+    <header class="header">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <strong>
+            <h1>Bienvenidos a Consultorios Avenida</h1>
+            <h2>20 años cuidando tu salud</h2>
+        </strong><br><br>
 
-            <label for="password">Contraseña:</label>
-            <input type="password" id="Contraseña" name="Contraseña" required><br><br>
+    </header>
 
-            <label for="password">Confirme Contraseña:</label>
-            <input type="password" id="ReContraseña" name="ReContraseña" required><br><br>
 
-            <input type="submit" value="Enviar">
-        </fieldset>
 
-    </form>
+
+    <Nav class="navbar">
+        <ul>
+            <li> <a href="../index.html">Inicio</a></li>
+            <li> <a href="Profesionales.html">Profesionales</a></li>
+            <li> <a href="Turnos.html">Turnos</a></li>
+            <li> <a href="Contacto.html">Contacto</a></li>
+
+        </ul>
+    </Nav>
+
+    <article class="main"><br><br>
+
+
+
+        <form action="" method="post" target="_blank">
+           
+                <legend>Registro:</legend>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" required><br><br>
+
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" required><br><br>
+
+                <label for="DNI">Documento:</label>
+                <select name="DNI" id="DNI">
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+                <label for="NRO">Numero:</label> <input type="number" id="NRO" name="NRO" required>
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" required><br><br>
+
+                <label for="password">Confirme Contraseña:</label>
+                <input type="password" id="ReContraseña" name="ReContraseña" required><br><br>
+
+                <input type="submit" value="Enviar">
+           
+
+        </form>
+    </article>
+
+    <footer class="footer">
+
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        <a href="mailto:consultoriosavenida@contacto.com.ar" target="_blank"> <i class="fas fa-at"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <br><br>
+        <p>@danidelme
+        <p><br>
+        <p>Todos los derechos reservados
+        <p><br>
+
+
+
+    </footer>
 </body>
 
 </html>
