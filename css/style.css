@@ -1,36 +1,33 @@
 /* Esta es mi hoja de estilos*/
+*{ box-sizing: border-box;
+  margin:0; padding: 0;}
+  
+  html {height: 100%;}
+  
+  body{ font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 1.2 rem;
+          min-height: 100%;}
 
-*{  font-size: large;
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-}
+  
+   h1 {color:grey;}
 
-    /* Encabezado*/
-header{
-        background-color: white;
-        text-align: center;
-        color: grey;
-        padding:10px;
-        padding-top: 35px;
-        
-    }
+   h2 {color:grey;}
 
-h1 {font-size: 30px;}
-    
-body{ background-color:rgb(200, 221, 228);
-}
+   h4 {color:grey;padding-bottom: 20px;
+       padding-right: 10px;padding-left: 10px;
+        font-size: 15px;}
 
 
+  h5 {color:grey;padding-bottom: 20px;
+     padding-right: 10px;padding-left: 10px;padding-top: 10px;
+     font-size: 10px;} 
 
-
-
-/*barra de navegacion*/
-ul {
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:rgb(200, 221, 228);
+    
   }
   
   li {
@@ -38,12 +35,12 @@ ul {
   }
   
   li a {
-    display:block;
+    display:flex;
     color: white;
     text-align:center;
-    padding: 20px 25px;
+    padding: 10px 15px;
     text-decoration: none;
-    background-color:rgb(227, 140, 245);
+    background-color:rgb(245, 178, 189);
     border-color:white;
     border-style:outset;
     border-width: 5px;
@@ -51,55 +48,138 @@ ul {
     
   }
   
-  li a:hover { background-color:rgb(134, 194, 250);
+  li a:hover { background-color:rgb(241, 231, 172);
     border-style:inset
     }
-    /*Botones*/
 
-    .botones:hover {
-        background-color:rgb(134, 194, 250);
-        border-style:inset;}
     
-    
-    
-    .botones{
-        color:white; 
-        background-color:rgb(227, 140, 245);
-        border-color:white;
-        border-style:outset;
-        border-width: 5px;
-        align-content:center;
-        text-decoration: none;}
 
+/*significa que se aplica a todo dentro de gri-container*/
+  .grid-container > * { 
+      box-shadow: -1px 1px 7px 0px rgb(179, 73, 35);
+      border-radius: 4px;
+      padding:10 px;
+      text-align: center;
+    }
 
+    .grid-container1 > * { 
+      box-shadow: -1px 1px 7px 0px rgb(179, 73, 35);
+      border-radius: 4px;
+      padding:10 px;
+      text-align: center;
+    }
 
-/*Main*/
- p{font-size: 20px;
-  line-height: 50 px;}
+  /* le decimos que parte queremos que ocupe en nuestra plantilla*/
+  .header{
+      grid-area: header;
+      background-color:rgb(240, 221, 221);
+  }
   
- img{float:right;
-  margin-left: 30px;
+  .header1{
+    grid-area: header1;
+    background-color:rgb(240, 221, 221)}
+  
+  .navbar{grid-area: navbar;
+          background-color: rgb(245, 178, 189);}
+
+  .navbar1{grid-area: navbar1;
+           background-color: rgb(245, 178, 189);}
+  
+  
+
+  .sidebar {grid-area: sidebar;
+          background-color: rgb(203, 209, 203);}
+  
+  .main {grid-area: main;background-color:white;}
+
+  .main1 {grid-area: main1;background-color:white;}
+ 
+
+  img {padding-top: 5px;padding-left: 5px;padding-right: 5px;
+       padding-bottom: 20px;}
+
+
+   #img1 {width: 70%;
+           margin:0 auto}
+
+   #mapa {width: 70%;
+         margin:0 auto}
+
+  .footer {grid-area: footer;
+        background-color:rgb(240, 221, 221);
+        padding-top:  10px;}
+
+  .footer1 {grid-area: footer1;
+         background-color:rgb(240, 221, 221);
+         padding-top:  10px;}
+  
+  /* se ponen las areas que queremos tenga nuestro grid*/
+  .grid-container { display: grid;
+      gap: 10px;
+      grid-template: 
+      "header" 100px
+      "navbar"50px
+       "main" 60%
+      "sidebar" 40%
+      "footer" 50px;
+  }
+  
+  .grid-container1 {display:grid;
+    background-color:rgb(241, 231, 172);
+    grid-template-columns:  60% 40%;
+    grid-template-rows: 100px 50px auto 50px;
+    grid-template-areas: 
+    "header1 header1 header1"
+    "navbar1 navbar1 navbar1" 
+    "main1 main1 main1"
+    "footer1 footer1 footer1" ;}
+
+
+
+  @media(min-width:600px) {
+  
+      .grid-container {background-color:rgb(215, 245, 242);
+          grid-template-columns:  60% 40%;
+          grid-template-rows: 100px 50px auto 50px;
+          grid-template-areas: 
+          "header header"
+          "navbar navbar" 
+          "main sidebar"
+          "footer footer" ;}
+  }
+  
+  @media(min-width:900px) {
+  
+      .grid-container {background-color:rgb(241, 231, 172);
+          grid-template-columns:  60% 40%;
+          grid-template-rows: 100px 50px auto 50px;
+          grid-template-areas: 
+          "header header header"
+          "navbar navbar header" 
+          "main main sidebar"
+          "footer footer footer" ;}
   }
 
- 
-     
-/* Iconos en footer*/
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #cde2f3;
+    padding: 10px;}
+    .grid-item {
+      background-color:white;
+      border: 1px solid grey;
+      padding: 35px;
+      font-size: 15px;
+      text-align: center;
+    color:rgb(124, 112, 112);}
 
-.fa-facebook{ color:rgb(43, 43, 134);
-              font-size: 30px;}
+  .fa-facebook{ color:rgb(43, 43, 134);
+    font-size: 30px;}
 
 .fa-instagram-square{ color:rgb(206, 40, 123);
-                      font-size: 30px;}
+            font-size: 30px;}
 
 .fa-whatsapp{color:rgb(38, 196, 38);
-             font-size: 30px;}
+   font-size: 30px;}
 
 .fa-at{color:rgb(78, 70, 70)  ;font-size: 30px;}
-
-footer{
-    background-color: white;
-    text-align: center;
-    height: 50px;
-    padding-top:  10px;}
-
-
