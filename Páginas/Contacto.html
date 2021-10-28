@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
     <script src="https://kit.fontawesome.com/62c8d4dfbf.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
@@ -39,18 +40,18 @@
         <p><h4>Contáctese con nosotros</h4></p>
 
 
-        <form action="" method="post" target="_blank">
+        <form name= "form" action="" method="post" target="_blank"  onsubmit="return validar();">
             <p>Nombre y Apellido:</p>
-            <input type="text" id="Nombre" name="Nombre" required size=30>
+            <input type="text" id="nombre" name="Nombre">
             <br>
             <p>Correo electrónico:</p>
-            <input type="email" id="email" name="email" required size=30>
+            <input type="email" id="email" name="email">
             <br>
             <p>Número telefónico:</p>
-            <input type="tel" id="Telefono" name="Telefono" size=30>
+            <input type="tel" id="telefono" name="Telefono">
             <br>
             <p>Ingrese su comentario:</p>
-            <textarea rows=10 cols=45 name="Comentario"></textarea>
+            <textarea id="comentario" rows=10 cols=45 name="Comentario"></textarea>
             <br>
 
             <input type="submit" class="boton" value="Enviar">
@@ -72,6 +73,7 @@
 
 
     </footer>
+    
 </body>
 
 </html>
